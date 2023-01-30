@@ -37,7 +37,7 @@ function PointTable(){
 function PointButton(){
   return(
     <>
-    <button className='point-button both16 top-11 flexbox-wrapper'>포인트 충전하기</button>
+    <button onclick="MessageInvoker.postMessage('충전하기');" className='point-button both16 top-11 flexbox-wrapper'>포인트 충전하기</button>
     </>
   )
 }
@@ -117,7 +117,7 @@ function App() {
     <div className='thin-16 left-16 top-7'>8,000P</div>
     <PointTable></PointTable>
     <div className='flexbox-wrapper left-16 right-16'>
-    <button className='point-button right-16 top-11'>포인트 충전하기</button>
+    <button onClick="MessageInvoker.postMessage('여기에 명령어를 적어주세요');" className='point-button right-16 top-11'>포인트 충전하기</button>
     </div>
     <div className='top-25 greyline'></div>
     <UsageRangeToggle></UsageRangeToggle>
@@ -126,7 +126,7 @@ function App() {
     <div className="display-enter terms right-16">{terms}<span className="blue-text">이용약관</span>{참조해주세요}</div>
     <div className='graybottom flexbox-wrapper'>
     <div className='flexbox-wrapper left-16 right-16'>
-    <button className='buy-button'>구매하기</button>
+    <button onClick="MessageInvoker.postMessage('여기에 명령어를 적어주세요');" className='buy-button'>구매하기</button>
     </div>
     <div className="gray-box-bottom">
       </div>
