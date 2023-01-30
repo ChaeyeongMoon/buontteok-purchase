@@ -3,6 +3,8 @@ import './App.css';
 import {useState}from'react';
 import downArrow from './img/icon_arrow_Down.svg';
 import downArrowcopy from './img/icon_arrow_Down_copy.svg';
+import styled from "styled-components";
+
 
 
 function Nav(){
@@ -35,12 +37,17 @@ function PointTable(){
 }
 
 function PointButton(){
-  return(
-    <>
-    <button onclick="MessageInvoker.postMessage('충전하기');" className='point-button both16 top-11 flexbox-wrapper'>포인트 충전하기</button>
-    </>
-  )
+
+  function createMarkup() {
+    return {__html:'</head><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"/></head><button onclick="MessageInvoker.postMessage(\'충전하기\');style="background-color: transparent;font-size: 16px;font-weight: 400;text-align: center;border: 1px solid #5835E2;color: #5835E2;border-radius: 4px;width: 100%;height: 49px;margin-left: 16px;margin-right: 16px;margin-top: 11px;flex-wrap: wrap;">포인트 충전하기</button>'}
 }
+
+  return <div dangerouslySetInnerHTML={createMarkup()} />;
+  
+}
+
+
+
 
 function UsageTable(){
   return(
@@ -100,6 +107,14 @@ const Myinfo=()=>{
     )
 }
 
+function Point(){
+  function createMarkup() {
+    return {__html: '</head><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"/></head><button onclick="MessageInvoker.postMessage(\'여기에 명령어를 적어주세요\');" style="background-color: transparent;font-size: 16px;font-weight: 400;text-align: center;border: 1px solid #5835E2;color: #5835E2;border-radius: 4px; width: 100%;height: 49px;margin-right: 16px;margin-top: 11px;">포인트 충전하기</button>'}}
+
+  return <div dangerouslySetInnerHTML={createMarkup()} />;
+  
+}
+
 
 function App() {
   const title=['포인트 충전하기', '구매하기']
@@ -117,7 +132,7 @@ function App() {
     <div className='thin-16 left-16 top-7'>8,000P</div>
     <PointTable></PointTable>
     <div className='flexbox-wrapper left-16 right-16'>
-    <button onClick="MessageInvoker.postMessage('여기에 명령어를 적어주세요');" className='point-button right-16 top-11'>포인트 충전하기</button>
+    <Point></Point>
     </div>
     <div className='top-25 greyline'></div>
     <UsageRangeToggle></UsageRangeToggle>
