@@ -1,5 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Noto Sans KR';
+}
+.bold-24{
+  font-weight: 700;
+  font-size: 24px;
+  color:#262626;
+  
+}
+.whitebox{
+  background-color: #F5F5F5;
+  margin:none;
+
+}
+.thin16{
+  font-weight: 400;
+  font-size:16px;
+  color:#262626;
+}
+.bold20{
+  font-weight: 700;
+  font-size:20px;
+  color:#262626;
+}
+.bold16{
+  font-weight: 700;
+  font-size:16px;
+  color:#262626;
+}
+.left-16{
+  margin-left: 16px;
+  text-align: left;
+}
+.right-16{
+  margin-right: 16px;
+}
+.both16{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.top-4{
+  margin-top: 4px;
+}
+.top-5{
+  margin-top:5px;
+}
+.top-7{
+  margin-top:7px;
+}
+.pad7{
+  padding-top:7px;
+}
+.top-11{
+  margin-top: 11px;
+}
+.top-14{
+  margin-top: 14px;
+}
+.top-18{
+  margin-top: 18px;
+}
+.top-21{
+  margin-top: 21px;
+}
+.top-25{
+  margin-top: 25px;
+}
+.line{
+  border-bottom: 1px solid #DCDCDC;
+}
+.greyline{
+  height: 5px;
+  border: 1px solid #DCDCDC;
+  background:#F3F3F3;
+}
+#grid{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border:14px solid #F3F3F3;
+  border-radius: 3px;
+}
+.buy-button {
+  font-family: 'Noto Sans KR';
+  background-color: #5835E2;
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #5835E2;
+  color: white;
+  border-radius: 4px;
+  width: 100%;
+  height: 49px;
+}
+.a{
+  background:#F3F3F3;
+  border-right: 1px solid #DCDCDC;
+}
+.b{
+  background:#F3F3F3;
+}
+.d{
+  background:#F3F3F3;
+}
+.flexbox-wrapper{
+  flex-wrap: wrap;
+
+}
+.App {
+  font-family: 'Noto Sans KR';
+  margin-right: none;
+}
+
+.header{
+  padding-top: 8px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid #EEEEEE;
+}
+.prev-button{
+  background-color: transparent;
+  float: left;
+  border: none;
+  font-size: 18px;
+}
+.nope{
+  font-size: 16px;
+  font-weight: 400;
+  color: red;
+}
+.blue-text{
+  color: #3FA0FA;
+}
+#grid-1fr-1fr{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  margin-left: 16px;
+}
+
+#text-align-left{
+  text-align: left;
+}
+.text-align-right{
+  text-align:right;
+}
+.margin-top-8px{
+  margin-top: 8px;
+}
+.bold-20px{
+  color:#262626;
+  font-size: 20px;
+  font-weight: 700;
+}
+.thin-16px{
+  color:#262626;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bold-16px{
+  color:#262626;
+  font-size: 16px;
+  font-weight: 700;
+}
+.top-4px{
+  margin-top: 4px;
+}
+.top-11px{
+  margin-top: 11px;
+}
+.top-14px{
+  margin-top: 14px;
+}
+.top-7px{
+  margin-top: 7px;
+}
+.top-20px{
+  margin-top: 20px;
+}
+.bottom-21px{
+  margin-bottom: 25px;
+}
+.bottom-25px{
+  margin-bottom: 25px;
+}
+.bottom-26px{
+  margin-bottom: 26px;
+}
+.top-9px{
+  margin-top: 9px;
+}
+.bottom-9px{
+  margin-bottom: 9px;
+}
+.padding-bottom-18px{
+  padding-bottom: 18px;
+}
+.gray-box{
+  margin-top: 25px;
+   height: 5px;
+  border-top:1px solid #DCDCDC;
+  border-bottom:1px solid #DCDCDC;
+  background: #F3F3F3;
+}
+.gray-box-bottom{
+    padding-bottom: 34px;
+    background: #F3F3F3;
+    margin-right: none;
+}
+.gray-border-bottom{
+  border-bottom:1px solid #DCDCDC;
+  margin-right: none;
+}
+.modal{
+  margin-top:20px;
+  padding:20px;
+  background:#eee;
+  text-align: left;
+}
+
+.buy-nav{
+  margin-top:16px;
+  width:100%;
+  color:#262626;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.title-nav{
+  margin-left: 16px;
+  width:100%;
+  color:#262626;
+  margin-top:5px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom:14px;
+}
+.borde-bottom-gray{
+  margin-top:14px;
+  border-bottom: 1px solid #DCDCDC;
+  margin-right: none;
+  margin-left: none;
+}
+
+.idea-price-title{
+
+  width:100%;
+  color:#262626;
+  margin-top:18px;
+  padding-top:14px;
+  margin-left: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.idea-price{
+  width:100%;
+  color:#262626;
+  margin-top:7px;
+  margin-left: 16px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 11px;
+}
+.bottom-35{
+  margin-bottom: 35px;
+}
+table {
+  background-color: #F3F3F3;
+  text-align: center;
+  width: 343px;
+  border-top: 1px solid #F3F3F3;
+  border-collapse: collapse;
+}
+th {
+  color:#262626;
+  font-size: 16px;
+  font-weight: 700;
+  border-left: 1px solid #DCDCDC;
+  padding-top: 14px;
+  grid-template-columns: 1fr,1fr;
+}
+td {
+  border-bottom: 1px solid #F3F3F3;
+  border-left: 1px solid #DCDCDC;
+  padding-top: 4px;
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #262626;
+  grid-template-columns: 1fr,1fr;
+}
+
+th:first-child, td:first-child {
+  border-left: none;
+}
+
+.usage-table {
+  background-color: transparent;
+  text-align: center;
+  width: 343px;
+  border-top: 1px solid #F3F3F3;
+  border-collapse: collapse;
+}
+
+.usage-td {
+  border-bottom: 1px solid #F3F3F3;
+  border-left: 1px solid #DCDCDC;
+  padding-top: 4px;
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: red;
+  grid-template-columns: 1fr,1fr;
+}
+.grayback{
+  background-color: #F3F3F3;
+}
+.down-button{
+  border:none;
+  background-color: transparent;
+}
+.point-button {
+  background-color: transparent;
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #5835E2;
+  color: #5835E2;
+  border-radius: 4px;
+  width: 100%;
+  height: 49px;
+  
+}
+
+.buy-button {
+  background-color: #5835E2;
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #5835E2;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  height: 49px;
+}
+
+dt{
+  margin-bottom: 4px;
+}
+.display-enter {
+  white-space: pre-line;
+}
+.body {
+  margin: 0;
+  background-color: white;
+}
+body{
+  margin: 0;
+  background-color: #F3F3F3;
+}
+.graybottom{
+  height: flex;
+
+}
+.terms{
+  padding-top:14px;
+  background-color: transparent;
+  text-align: right;
+  font-weight: 400;
+  font-size: 10px;
+  color: #838383;
+  padding-bottom: 60px;
+}
+div{
+  /* 박스의 크기를테두리 기준으로 크기를 정함*/
+  /* padding-left:16px; */
+}
+
+
+
+
+
+#wrapper{
+  border: 3px solid red;
+}
+
+
+#grid{
+  
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border:14px solid #F3F3F3;
+  border-radius: 3px;
+}
+.a{
+  background:#F3F3F3;
+  border-right: 1px solid #DCDCDC;
+
+}
+.b{
+  background:#F3F3F3;
+}
+.c{
+  border-right:5px solid blue;
+  background:#F3F3F3;
+}
+.d{
+  background:#F3F3F3;
+}
+
+
+.point-button {
+  background-color: transparent;
+  font-family: 'Noto Sans KR';
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid #5835E2;
+  color: #5835E2;
+  border-radius: 4px;
+  width: 100%;
+  height: 49px;
+  
 }
 
 .App-logo {
